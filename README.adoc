@@ -1,0 +1,31 @@
+# Testing Spark RDD and DataFrame/DataSet APIs
+
+### Exersice description
+
+Create simple Scala applications. Applications may work only in Spark local mode and can be launched directly from IDE (perhaps except saving to parquet as it can require additional fixes on Windows)
+
+_Implement following application (each in separate main function):_
+
+1. Create RDD from user.txt and filter out users with valid=0, select only id and name fields (use RDD API only).
+Create DataFrame or Dataset from car.txt, filter out cars with valid=0, select only id, model and user_id fields (use DataFrame/Dataset API only).
+Join those users and cars by user_id. Save result into parquet and csv files.
+
+2. Load car.txt to RDD. Group by type field and get average value of number field for each type (use RDD API only). Save result to csv or print to consol.
+
+3. Load car.txt DataFrame/Dataset. Group by type field and get avg, min, max value of number field for each type (use DataFrame/Dataset API only). Save result to csv or print to consol.
+
+### Run
+
+[source, console]
+----
+sbt run
+----
+
+### Check results
+
+All results stored in:
+
+[source]
+----
+/resourses/exercises/answers/
+----
