@@ -1,0 +1,8 @@
+id,model,type,number,user_id,valid
+1,S,t1,3,1,1
+2,M,t1,4,1,1
+3,M,t2,1,2,1
+4,M,t2,1,3,1
+5,K,t2,2,3,1
+6,S,t3,6,4,1
+7,SS,t3,8,1,0
